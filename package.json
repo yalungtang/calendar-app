@@ -1,0 +1,52 @@
+{
+  "name": "react-interview-project-yalung-tang",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.3.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "autoprefixer": "^9",
+    "moment": "^2.29.1",
+    "postcss": "^7",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-datepicker": "^4.3.0",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "react-scripts": "4.0.3",
+    "redux-devtools-extension": "^2.13.9",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
