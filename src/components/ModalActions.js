@@ -8,6 +8,7 @@ const ModalActions = ({ onConfirm, onCancel, primaryLabel }) => {
         Cancel
       </button>
       <button
+        data-testid="modal-confirm-button"
         onClick={onConfirm}
         className="px-4 py-2 text-white font-semibold bg-blue-500 rounded"
       >

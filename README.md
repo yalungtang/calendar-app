@@ -2,6 +2,8 @@
 
 This calendar app was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can see a demo on [https://yalung-calendar.netlify.app/](https://yalung-calendar.netlify.app/)
+
 ## Installation instructions
 - Clone the repo
 - Run `yarn install` to install project dependencies.

@@ -98,6 +98,7 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
         </p>
         <div className="flex flex-row">
           <input
+            data-testid="input-text"
             type="text"
             name="text"
             value={text}
@@ -107,6 +108,7 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
             maxLength="30"
           ></input>
           <button
+            data-testid="color-button"
             alt="Select color"
             style={{ backgroundColor: selectedColor }}
             onClick={(e) => {
@@ -131,6 +133,7 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
             <p className="mb-2 font-semibold text-gray-700">Date</p>
             <div className="flex flex-row w-full h-16 bg-white border border-gray-200 rounded shadow-sm appearance-none">
               <DatePicker
+                data-testid="date-picker"
                 className="w-full h-full p-5 focus:outline-none"
                 selected={selectedDate}
                 onChange={(date) => setSelectedDate(date)}
@@ -146,6 +149,7 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
             <p className="mb-2 font-semibold text-gray-700">Time</p>
             <div className="h-16 px-5 flex flex-row justify-between bg-white border border-gray-200 rounded shadow-sm appearance-none">
               <select
+                data-testid="hours-select"
                 type="text"
                 name="hours"
                 className="p-2 focus:outline-none"
@@ -153,10 +157,13 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
                 onChange={(e) => handleFormChange(e, "hours")}
               >
                 {hourOptions.map((v) => (
-                  <option key={`hour-${v}`} value={v}>{v}</option>
+                  <option key={`hour-${v}`} value={v}>
+                    {v}
+                  </option>
                 ))}
               </select>
               <select
+                data-testid="minutes-select"
                 type="text"
                 name="minutes"
                 className="p-2 focus:outline-none"
@@ -164,10 +171,13 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
                 onChange={(e) => handleFormChange(e, "minutes")}
               >
                 {minuteOptions.map((v) => (
-                  <option key={`minute-${v}`} value={v}>{v}</option>
+                  <option key={`minute-${v}`} value={v}>
+                    {v}
+                  </option>
                 ))}
               </select>
               <select
+                data-testid="meridian-select"
                 type="text"
                 name="meridian"
                 className="p-2 focus:outline-none"
@@ -175,7 +185,9 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
                 onChange={(e) => handleFormChange(e, "meridian")}
               >
                 {meridianOptions.map((v) => (
-                  <option key={`meridian-${v}`} value={v}>{v}</option>
+                  <option key={`meridian-${v}`} value={v}>
+                    {v}
+                  </option>
                 ))}
               </select>
               <div>
@@ -190,6 +202,7 @@ const ReminderForm = ({ view, savedValues, onDelete }) => {
         <div className="text-red flex flex-row justify-end">
           {view.view === "edit" ? (
             <button
+            data-testid="delete-button"
               onClick={onDelete}
               className="text-red-500 bg-none border-none text-left"
             >

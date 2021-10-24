@@ -4,7 +4,7 @@ import Reminder from "./Reminder"
 const CalendarCell = ({ formattedDate, reminders, type }) => {
     const date = moment(formattedDate, "MM/DD/YYYY");
     return (
-      <li className={`text-left text-gray-600 border p-2 relative ${type === 'overflow' ? 'bg-gray-100 text-gray-400' : ''}`}>
+      <li data-testid="calendar-cell" className={`text-left text-gray-600 border p-2 relative ${type === 'overflow' ? 'bg-gray-100 text-gray-400' : ''}`}>
         <div className="absolute">{date.format("D")}</div>
         <div className="absolute w-full h-full -ml-2 -mt-2 p-1 pt-10">
           <div className="w-full h-full overflow-y-auto">
